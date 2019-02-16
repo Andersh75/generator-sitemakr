@@ -3,7 +3,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "deploy": "firebase deploy"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +30,19 @@
     "rollup-plugin-scss": "latest"
   },
   "dependencies": {
-    "lit-element": "latest"
+    "lit-element": "latest",
+    "rxjs": "latest",
+    "pouchdb": "latest",
+    "pouchdb-authentication": "latest",
+    "ramda": "latest",
+    "redux": "latest",
+    "redux-logger": "latest",
+    "redux-pouchdb": "latest",
+    "@vaadin/router": "latest",
+    "d3": "latest",
+    "mathjs": "latest",
+    "universal-router": "latest",
+    "chart.js": "latest",
+    "firebase": "latest"
   }
 }
