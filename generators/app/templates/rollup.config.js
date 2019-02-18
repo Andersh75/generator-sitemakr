@@ -6,7 +6,7 @@ import scss from "rollup-plugin-scss";
 export default {
   input: `./src/index.js`,
   output: {
-    file: `./public/bundle.js`,
+    file: `./public/bundle/bundle.js`,
     name: `MyModule`,
     format: `iife`
   },

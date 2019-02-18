@@ -45,6 +45,13 @@ module.exports = class extends Generator {
     this.fs.copyTpl(this.templatePath(), this.destinationPath(), {
       title: this.answers.title
     });
+    this.fs.copy(
+      this.templatePath("../api-docs"),
+      this.destinationPath("./public/api-docs"),
+      {
+        title: this.answers.title
+      }
+    );
   }
 
   // Install() {

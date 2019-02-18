@@ -3,7 +3,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "rollup -c -w",
+    "rollup": "rollup -c -w",
+    "nodemon": "npx nodemon server",
+    "dev": "concurrently --kill-others \"npm run rollup\" \"npm run nodemon\" \"json-server --watch db.json --port 4000\"",
     "deploy": "firebase deploy"
   },
   "keywords": [],
@@ -39,10 +41,17 @@
     "redux-logger": "latest",
     "redux-pouchdb": "latest",
     "@vaadin/router": "latest",
-    "d3": "latest",
     "mathjs": "latest",
     "universal-router": "latest",
     "chart.js": "latest",
-    "firebase": "latest"
+    "firebase": "latest",
+    "express": "latest",
+    "body-parser": "latest",
+    "cheerio": "latest",
+    "json-server": "latest",
+    "d3": "latest",
+    "swagger-jsdoc": "latest",
+    "nodemon": "latest",
+    "concurrently": "latest"
   }
 }
